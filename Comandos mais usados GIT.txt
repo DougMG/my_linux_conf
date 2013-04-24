@@ -1,0 +1,65 @@
+#### Comandos mais usados GIT ####
+(referências: https://www.kernel.org/pub/software/scm/git/docs/ e ScreenCast do Akita)
+
+Adicionar um arquivo específico ao commit:
+git add <arquivo>
+
+Adicionar árvore de arquivos ao commit (todos os arquivos)
+git add . 
+
+Retirar um arquivo do commit:
+git rm --cached <arquivo>
+
+Mostrar o Status da arvóre atual:
+git status
+
+Mostrar o log dos Commits:
+git log
+Ou para exibir mais detalhes do log:
+git log --stat
+
+Mostrar os commits que não estão mais acessíveis no histórico:
+git reflog
+
+Apagar os arquivos do diretório de trabalho que não fazem mais parte do repo:
+git clean -f
+
+Apagar apenas o commit mantendo as modificações:
+git reset HEAD~1 --soft
+
+Apagar o commit e as modificações:
+git reset HEAD~1 --hard
+Ps: o número 1 representa último commit, para apagar os 2 últimos adiciona-se o 2 e assim por diante.
+
+
+Mostra um gráfico dos branchs:
+git log --graph
+
+Gravar  arquivos do índice num stash anônimo:
+git stash
+
+Gravar  arquivos do índice num stash descrito:
+git stash save <descrição>
+
+Aplicar o último stash gravado no arquivo de trabalho:
+git stash apply
+
+Aplicar o último stash gravado no diretório de trabalho e apaga o stash
+git stash pop
+
+Apagar o stash designado pelo <Código>
+git stash drop <código>
+
+Listar os stashs gravados
+git stash list
+
+apagar todos os stashs gravados
+git stash clear
+
+
+Criar um novo BRANCH:
+git checkout -b <nome_do_branch>
+ps:Branch: é uma ramificação no desenvolvimento, usada para descrever o processo de divisão dos arquivos de um projeto em linhas de desenvolvimento independentes. Podendo servir para teste de uma nova funcionalidade ou para projetos destinados a um cliente específico.
+
+Para apagar o BRANCH:
+git checkout -d <nome_do_branch> /* -D para forçar */ 
