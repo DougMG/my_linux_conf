@@ -1,0 +1,18 @@
+#### Comandos mais usados ####
+pwd => Mostra o caminho do diretório em uso.
+
+source => Serve para recarregar arquivos na shell em questão
+Ex: source ~/.bashrc
+
+df -a => Exibe informações sobre o disco em questão (uso, espaço Etc..)
+
+htop => Verifica o uso de memória (sudo apt-get install htop)
+
+cat /etc/issue => diz a versão do da distro
+
+uname -a => diz a versão do kernel
+
+cat /proc/cpuinfo => informações sobre o processador
+
+Desabilitando Erro do Apport
+sudo sed -i 's/enabled=1/enabled=0/' /etc/default/apport && sudo service apport stop
