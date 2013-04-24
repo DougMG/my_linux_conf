@@ -1,0 +1,8 @@
+#### Comandos mais usados do VIM ####
+
+Procurar  partes de texto dentro do diretório utilizado
+:Ack "parte_do_texto"
+
+Salvar o arquivo
+:w
+:w! => Força a salvar
