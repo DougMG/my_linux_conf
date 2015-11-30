@@ -32,7 +32,7 @@ Para carregar a RVM no bash:
 ﻿$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 Ou
 [Comando:]
-﻿$ echo '[[ -s "/home/[NOME_DO_USUARIO]/.rvm/scripts/rvm" ]] && source "/home/[NOME_DO_USUARIO]/.rvm/scripts/rvm"' >> ~/.bashrc
+﻿$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 
 Para recarregar o Bashrc sem precisar sair do terminal:
 [Comando:]
