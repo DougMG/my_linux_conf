@@ -10,8 +10,7 @@ Para instalar o Mysql com a lib do PHP:
 $ sudo apt-get install mysql-server-5.5 php5-mysql
 
 Para Instalar o PHPMyAdmin
-$ sudo apt-get install phpmyadmin 
-
+$ sudo apt-get install phpmyadmin
 
 Etapa #02
 Instalação do Ruby on Rails através da RVM:
@@ -26,7 +25,7 @@ $ sudo apt-get install curl
 
 Para instalar a RVM use o comando abaixo:
 [Comando:]
-$﻿ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+$ \curl -sSL https://get.rvm.io | bash -s stable
 
 Para carregar a RVM no bash:
 [Comando:]
@@ -48,20 +47,13 @@ Para saber quais dependências são necessárias:
 [Comando:]
 $ rvm requirements
 
-E depois
-[Comando:]
-$ sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
-
-Ps: Geralmente são essas dependências:
-build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config libpq-dev libmysqlclient-dev
-
 Para instalar o Ruby:
 [Comando:]
-$ rvm install 1.9.3
+$ rvm install 2.2.0
 
 E para usarmos a versão como default:
 [Comando:]
-﻿$ rvm use --default 1.9.3
+﻿$ rvm use --default 2.2.0
 
 Para instalar o Rails:
 [Comando:]
@@ -72,7 +64,7 @@ Instalação dos Editores de Texto e IDE's
 
 #03.1 - Instalação do Sublime-text2 via repositório:
 [Comando:]
-$ sudo apt-add-repository ppa:webupd8team/sublime-text-2
+$ sudo apt-add-repository ppa:webupd8team/sublime-text-3
 [Comando:]
 $ sudo apt-get update
 [Comando:]
